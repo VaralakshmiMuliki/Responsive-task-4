@@ -1,0 +1,90 @@
+.contacts-container {
+  h5 {
+    color: #505050;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  span {
+    font-weight: normal;
+  }
+  .address-details {
+    display: flex;
+    padding: 20px;
+    .contact-icon {
+      color: #8d8d8d;
+      font-size: 30px;
+    }
+  }
+
+  .address {
+    // line-height: 8px;
+    padding-left: 10px;
+    h4 {
+      font-size: 12px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 12px;
+      color: #8d8d8d;
+    }
+  }
+  .message-container {
+    h4 {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    .circle {
+      color: blue;
+      font-size: 14px;
+      margin-top: 4px;
+      margin-left: 4px;
+    }
+    .name {
+      margin-bottom: 8px;
+      text-transform: uppercase;
+
+      input {
+        padding: 10px;
+        // height: 40px;
+        width: 200px;
+        border: 1px solid #8d8d8d;
+
+      }
+    }
+    .email {
+      margin-bottom: 6px;
+      font-size: 16px;
+      text-transform: uppercase;
+
+
+      input {
+        padding: 10px;
+        // height: 40px;
+        width: 200px;
+        border: 1px solid #8d8d8d;
+      }
+    }
+    .message-text {
+      font-size: 16px;
+      text-transform: uppercase;
+
+      input {
+        padding: 30px;
+        // height: 40px;
+        width: 200px;
+        border: 1px solid #8d8d8d;
+
+      }
+    }
+    .send-btn{
+      text-transform: uppercase;
+      padding: 15px;
+      border: 0;
+      background-color: #4c96f2;
+      border-radius: 30px;
+      color: white;
+      font-weight: bold;
+      margin-top: 24px;
+    }
+  }
+}

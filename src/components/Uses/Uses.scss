@@ -1,0 +1,64 @@
+.uses-bg {
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+
+  .uses-container {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: relative;
+    top: -80px;
+    text-align: center;
+    background-color: white;
+    padding: 30px 10px 30px 10px;
+
+    .uses-column {
+      text-align: center;
+      padding: 10px;
+      line-height: 20px;
+      .number {
+        font-weight: 900 !important;
+        font-family: "montserrat";
+        color: rgba(76, 150, 242, 1);
+        font-size: 30px;
+      }
+      .use-title {
+        font-family: "montserrat";
+        text-transform: capitalize;
+        font-size: 16px;
+        color: #303030;
+        font-weight: bold;
+      }
+      p {
+        font-family: "open sans";
+        color: #595959;
+        font-size: 14px;
+      }
+    }
+    .calender {
+      padding-top: 10px;
+      color: #1459af;
+      font-size: 48px;
+    }
+    .appointment-head {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-style: "montserrat";
+      font-weight: 700;
+      color: #303030;
+      margin-top: 10px;
+    }
+    .schedule-btn {
+      text-transform: uppercase;
+      background-color: #75b1fc;
+      color: white;
+      border: 0;
+      border-radius: 30px;
+      padding: 8px 10px 8px 10px;
+      // height: 30px;
+      width: 150px;
+      align-self: center;
+      margin-top: 8px;
+    }
+  }
+}

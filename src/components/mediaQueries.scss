@@ -1,0 +1,280 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+  .brand-logo {
+    height: 50px;
+    width: 210px;
+  }
+  .home-container {
+    height: 80vh;
+    .new-demo {
+      font-size: 20px;
+    }
+    .home-title {
+      font-size: 30px;
+      width: 490px;
+    }
+    .Demo-button {
+      margin-top: 20px;
+      padding: 20px;
+    }
+  }
+
+  .uses-bg {
+    box-sizing: border-box;
+    .uses-container {
+      margin-top: 30px;
+      position: relative;
+      left: 10px;
+      width: 580px;
+    }
+  }
+  .about-us-container {
+    .about-us-column {
+      padding-top: 40px;
+      p {
+        font-size: 20px !important;
+      }
+    }
+  }
+
+  .experience-column {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .skills {
+      font-weight: normal;
+      font-size: 36px;
+      color: #303030;
+    }
+    .experience {
+      font-weight: bold;
+      font-size: 36px;
+      color: #303030;
+    }
+  }
+  .testimonial-container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .customer-review-carousel {
+      padding: 25px 120px 25px 120px !important;
+    }
+    p {
+      color: #8d8d8d;
+      font-family: "open sans" !important;
+      font-size: 18px !important;
+    }
+  }
+.customer-review-carousel{
+  .carousel-control-prev, .carousel-control-next{
+    margin-top: -40% !important;
+    color: red !important;
+    filter:invert(100%);
+  }
+
+
+}
+  //   .about-us-container{
+  //     .postion{
+  //         position: absolute;
+  //     }
+  //     .plus-1{
+  //         position: relative;
+  //         left: 100px;
+  //         top: -460px;
+  //     }
+  //     .plus-2{
+  //         position: relative;
+  //         left: 100px;
+  //         top: -330px;
+  //     }
+  //     .plus-3{
+  //         position: relative;
+  //         left: 100px;
+  //         top: -260px;
+
+  //     }
+  //     .about-us-column{
+  //         padding-left: 20px;
+  //         .about{
+  //             margin-top: 50px;
+  //             font-size: 34px;
+
+  //         }
+  //         .us{
+  //             font-size: 30px;
+  //         }
+  //         p{
+  //             font-size: 18px;
+  //         }
+  //     }
+  //   }
+}
+
+@media (min-width: 1024px) {
+  .brand-logo {
+    height: 50px;
+    width: 210px;
+  }
+  .home-container {
+    height: 90vh;
+    .new-demo {
+      font-size: 20px;
+    }
+    .home-title {
+      font-size: 30px;
+      width: 490px;
+    }
+    .Demo-button {
+      margin-top: 20px;
+      padding: 20px;
+    }
+  }
+  .uses-bg {
+    .uses-container {
+      padding-left: 10px;
+      .uses-column {
+        // border-right: 1px solid gray;
+        // padding-top: 80px;
+        // padding-bottom: 80px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .calender-column {
+        // border-right: 1px solid gray;
+      }
+    }
+  }
+  .about-us-column {
+    padding-top: 40px;
+    p {
+      font-size: 20px !important;
+    }
+  }
+
+  .image-gallery-container {
+    .gallery {
+      font-size: 39px !important;
+    }
+    .image {
+      font-size: 36px !important;
+    }
+  }
+
+  .experience-column {
+    // padding-top: 80px;
+    // padding-bottom: 80px;
+    .skills {
+      font-weight: normal;
+      font-size: 36px;
+      color: #303030;
+    }
+    .experience {
+      font-weight: bold;
+      font-size: 36px;
+      color: #303030;
+    }
+    p {
+      font-size: 18px !important;
+    }
+  }
+  .status-column {
+    // padding-top: 40px;
+    // padding-bottom: 40px;
+    padding-top: 10px;
+
+    .status-container {
+      padding-bottom: 50px !important;
+      .status-bar {
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .testimonial-container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .customer-review-carousel {
+      padding: 25px 120px 25px 120px !important;
+      .carousel-control-prev, .carousel-control-next{
+        margin-top: -25% !important;
+        color: red !important;
+        filter:invert(100%);
+      }
+    }
+    p {
+      color: #8d8d8d;
+      font-family: "open sans" !important;
+      font-size: 18px !important;
+    }
+  }
+
+  .contacts-container {
+    h5 {
+      color: #505050;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    span {
+      font-weight: normal;
+    }
+    .address-details {
+      display: flex;
+      padding: 20px;
+      .contact-icon {
+        color: #8d8d8d;
+        font-size: 30px;
+      }
+    }
+  
+    .address {
+      // line-height: 8px;
+      padding-left: 10px;
+      h4 {
+        font-size: 12px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 12px;
+        color: #8d8d8d;
+      }
+    }
+    .message-container {
+      h4 {
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+      .name {
+          margin-bottom: 8px;
+        input {
+          padding: 20px;
+          // height: 40px;
+          width: 400px;
+        }
+        
+       
+      }
+      .email{
+          margin-bottom: 8px;
+  
+          input{
+              padding: 20px;
+              // height: 40px;
+              width: 400px;
+          }
+        }
+        .message-text{
+  
+          input{
+              padding: 40px;
+              // height: 40px;
+              width: 400px;
+          }
+        }
+    }
+  }
+  
+}

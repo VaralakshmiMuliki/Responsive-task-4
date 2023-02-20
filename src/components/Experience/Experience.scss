@@ -1,0 +1,52 @@
+.experience-container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  .experience-column {
+    //   padding-top: 40px;
+    //   padding-bottom: 40px;
+    //   padding-left: 10px;
+    .skills {
+      font-weight: normal;
+    }
+    .experience {
+      font-weight: bold;
+    }
+    p {
+      color: #8d8d8d;
+      font-size: 14px;
+      font-family: "open sans";
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+  }
+
+  .status-column {
+    //   padding-top: 40px;
+    //   padding-bottom: 40px;
+    .status-container {
+      padding-bottom: 20px;
+      #progressbar {
+        background-color: #bdb7b7;
+        border-radius: 13px;
+        height: 10px;
+        padding: 3px;
+      }
+      
+      #progressbar>div {
+        background-color: #4c96f2;;
+        height: 5px;
+        border-radius: 10px;
+      }
+      .status-bar {
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
