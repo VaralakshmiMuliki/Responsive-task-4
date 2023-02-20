@@ -2,9 +2,9 @@ import React from "react";
 import "./Experience.scss";
 import "../../components/mediaQueries.scss";
 import { Col, Container, Row } from "react-bootstrap";
+import { mydatacontext } from "../myContext/myContext";
 
 export const Experience = () => {
-  const status =[ {skill:'Progress',skillPercentage:'40'},{skill:'Design',skillPercentage:'90'},{skill:'Managing & SEO',skillPercentage:'100'}]
   return (
     <Container className="experience-container">
       <Row>
@@ -26,18 +26,28 @@ export const Experience = () => {
           </p>
         </Col>
         <Col xs="12" md="12" lg="6" className="status-column">
-          {status.map((each, i) => (
-            <div key={i} className="status-container">
-              <div className="status-bar">
-                <h2>{each.skill}</h2>
-                <h2>{`${each.skillPercentage}%`}</h2>
-              </div>
-              {/* <Progress percent={100} status="active" showInfo={false} /> */}
-              <div id="progressbar">
-                <div style={{width:`${each.skillPercentage}%`}}></div>
-              </div>
-            </div>
-          ))}
+          <mydatacontext.Consumer>
+            {({ experienceStatus }) => {
+              return (
+                <>
+                  {experienceStatus.map((each, i) => (
+                    <div key={i} className="status-container">
+                      <div className="status-bar">
+                        <h2>{each.skill}</h2>
+                        <h2>{`${each.skillPercentage}%`}</h2>
+                      </div>
+                      {/* <Progress percent={100} status="active" showInfo={false} /> */}
+                      <div id="progressbar">
+                        <div
+                          style={{ width: `${each.skillPercentage}%` }}
+                        ></div>
+                      </div>
+                    </div>
+                  ))}
+                </>
+              );
+            }}
+          </mydatacontext.Consumer>
         </Col>
       </Row>
     </Container>

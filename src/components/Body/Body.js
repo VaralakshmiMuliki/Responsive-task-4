@@ -8,21 +8,45 @@ import { ImageGallery } from "../Image Gallery/ImageGallery";
 import { Numbers } from "../Numbers/Numbers";
 import { Partners } from "../Partners/Partners";
 import { Testimonial } from "../Testimonials/Testimonial";
-import { Uses } from "../Uses/Uses";
+import { Features } from "../Features/Features";
+import {
+  mydatacontext,
+  imagesGallery,
+  countDetails,
+  partnerDetails,
+  customerReview,
+  repairFeatures,
+  address,
+  ContactDetails,
+  experienceStatus
+  
+} from "../myContext/myContext";
 
 export const Body = () => {
   return (
     <>
-      <Home />
-      <Uses />
-      <AboutUs />
-      <ImageGallery />
-      <Experience />
-      <Numbers />
-      <Testimonial />
-      {/* <Map/> */}
-      <Contacts />
-      <Partners />
+      <mydatacontext.Provider
+        value={{
+          imagesGallery,
+          countDetails,
+          partnerDetails,
+          customerReview,
+          repairFeatures,
+          address,
+          ContactDetails,
+          experienceStatus
+        }}
+      >
+        <Home />
+        <Features />
+        <AboutUs />
+        <ImageGallery />
+        <Experience />
+        <Numbers />
+        <Testimonial />
+        <Contacts />
+        <Partners />
+      </mydatacontext.Provider>
     </>
   );
 };

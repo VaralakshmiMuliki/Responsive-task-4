@@ -4,8 +4,17 @@ import "./AboutUs.scss";
 import "../../components/mediaQueries.scss";
 // import { AiOutlinePlus } from "react-icons/ai";
 // import { Tooltip } from "antd";
+import { Collapse } from "antd";
 
 export const AboutUs = () => {
+  const { Panel } = Collapse;
+  const text = `
+  A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.
+`;
+
+const aboutAccordian = ['Motivation',"Quality","Future"];
   return (
     <Container fluid className="about-us-container">
       <Row>
@@ -38,6 +47,16 @@ export const AboutUs = () => {
             vehicula, iaculis tortor eu, placerat elit. Aenean iaculis nulla nec
             condimentum pulvinar.
           </p>
+          <Collapse accordion>
+            {
+              aboutAccordian.map((each,i) => 
+              <Panel header={each} key={i} className='accordian-head'>
+              <p className="accordian-text">{text}</p>
+            </Panel>)
+            }
+           
+           
+          </Collapse>
         </Col>
       </Row>
     </Container>

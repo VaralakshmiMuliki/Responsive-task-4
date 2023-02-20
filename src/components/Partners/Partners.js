@@ -1,20 +1,9 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./Partners.scss";
+import { mydatacontext } from "../myContext/myContext";
 
 export const Partners = () => {
-  const partnerDetails = [
-    "https://jevelin.shufflehound.com/landing/wp-content/uploads/sites/6/2016/05/Logo_1.png",
-    "https://jevelin.shufflehound.com/landing/wp-content/uploads/sites/6/2016/05/Logo_4.png",
-    "https://jevelin.shufflehound.com/landing/wp-content/uploads/sites/6/2016/05/Logo_5.png",
-    "https://jevelin.shufflehound.com/landing/wp-content/uploads/sites/6/2016/05/Logo_4.png",
-    "https://jevelin.shufflehound.com/landing/wp-content/uploads/sites/6/2016/05/Logo_5.png",
-    "https://jevelin.shufflehound.com/landing/wp-content/uploads/sites/6/2016/05/Logo_1.png",
-    "https://jevelin.shufflehound.com/landing/wp-content/uploads/sites/6/2016/05/Logo_4.png",
-    "https://jevelin.shufflehound.com/landing/wp-content/uploads/sites/6/2016/05/Logo_5.png",
-    "https://jevelin.shufflehound.com/landing/wp-content/uploads/sites/6/2016/05/Logo_1.png",
-    "https://jevelin.shufflehound.com/landing/wp-content/uploads/sites/6/2016/05/Logo_4.png",
-  ];
   return (
     <Container className="partner-container">
       <Row>
@@ -26,9 +15,17 @@ export const Partners = () => {
         <Col>
           <div className="container">
             <div className="sliding-background">
-              {partnerDetails.map((each) => (
-                <img width={"180px"} src={each} alt="envato" />
-              ))}
+              <mydatacontext.Consumer>
+                {({ partnerDetails }) => {
+                  return (
+                    <>
+                      {partnerDetails.map((each) => 
+                        <img width={"180px"} src={each} alt="envato" />
+                      )}
+                    </>
+                  );
+                }}
+              </mydatacontext.Consumer>
             </div>
           </div>
         </Col>

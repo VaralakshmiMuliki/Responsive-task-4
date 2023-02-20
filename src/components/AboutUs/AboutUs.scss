@@ -1,73 +1,92 @@
+.about-us-container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  // .plus-icon{
+  //     color: white;
+  //     font-size: 20px;
+  //     font-weight: bold;
 
-.about-us-container{
-    padding-top: 80px;
-    padding-bottom: 80px;
-    position: relative;
-    // .plus-icon{
-    //     color: white;
-    //     font-size: 20px;
-    //     font-weight: bold;
+  // }
+  // .postion{
+  //     position: absolute;
+  // }
+  // .plus-1{
+  //     position: relative;
+  //     left: 80px;
+  //     top: -80px;
 
-    // }
-    // .postion{
-    //     position: absolute;
-    // }
-    // .plus-1{
-    //     position: relative;
-    //     left: 80px;
-    //     top: -80px;
-       
-    // }
-    // .plus-2{
-    //     position: relative;
-    //     left: 200px;
-    //     top: -160px;
-    // }
-    // .plus-3{
-    //     position: relative;
-    //     left: 200px;
-    //     top: -280px;
+  // }
+  // .plus-2{
+  //     position: relative;
+  //     left: 200px;
+  //     top: -160px;
+  // }
+  // .plus-3{
+  //     position: relative;
+  //     left: 200px;
+  //     top: -280px;
 
-    // }
-    
-    // .plus{
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     align-items: center;
-    //     font-size: 16px;
-    //     border: 8px solid white;
-    //     height: 50px;
-    //     width: 50px;
-    //     padding: 10px;
-    //     border-radius: 25px;
-    //     background-color: rgb(76, 150, 242);
-       
-    // }
-    .about-us-column{
-        padding-right: 50px;
-        padding-top: 20px;
-      
-        .us{
-            font-size: 26px;
-            // color:red;
-            font-family: 'montserrat' ;
-            font-weight: normal;
-         
-        }
-        .about{
-            
-            font-weight: bold;
-            font-size: 28px;
-        }
-        p{
-            font-family: 'open sans';
-            font-size: 15px;
-            color: #595959;
-            padding-top: 15px;
-        }
-       
+  // }
+
+  // .plus{
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     align-items: center;
+  //     font-size: 16px;
+  //     border: 8px solid white;
+  //     height: 50px;
+  //     width: 50px;
+  //     padding: 10px;
+  //     border-radius: 25px;
+  //     background-color: rgb(76, 150, 242);
+
+  // }
+  .about-us-column {
+    padding-right: 50px;
+    padding-top: 20px;
+
+    .us {
+      font-size: 26px;
+      // color:red;
+      font-family: "montserrat";
+      font-weight: normal;
     }
+    .about {
+      font-weight: bold;
+      font-size: 28px;
+    }
+    p {
+      font-family: "open sans";
+      font-size: 15px;
+      color: #595959;
+      padding-top: 15px;
+    }
+    .accordian-head {
+      color: #8c8c8c;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .ant-collapse-header {
+    }
+    .ant-collapse{
+      border: 0;
+      border-radius: 0;
+      background-color: white;
 
-  
+
+    }
+    .ant-collapse-item{
+      margin-bottom: 10px ;
+      background-color: #b9b3b3;
+      color: black;
+
+        border-bottom: 0;
+    }
+    .accordian-text{
+        font-weight: normal;
+        padding: 0;
+    }
+  }
 }
